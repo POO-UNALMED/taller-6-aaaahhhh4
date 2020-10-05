@@ -23,9 +23,11 @@ public class Fabricante {
 		this.pais = pais;
 		fabricantes.put(this, 0);
 	}
+	public Fabricante() {
+	}
 	public static Fabricante fabricaMayorVentas() {
 		int c=0;
-		Fabricante f;
+		Fabricante f=new Fabricante();
 		for (Fabricante i: fabricantes.keySet()) {
 			int a=fabricantes.get(i);
 			if(a>c) {

@@ -13,13 +13,15 @@ public class Pais {
 		this.nombre = nombre;
 		paises.put(this, 0);
 	}
+	public Pais() {		
+	}
 
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
 	public static Pais paisMasVendedor() {
 		int c=0;
-		Pais p;
+		Pais p=new Pais();
 		for (Pais i: paises.keySet()) {
 			int a=paises.get(i);
 			if(a>c) {
